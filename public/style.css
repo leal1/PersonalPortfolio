@@ -27,7 +27,7 @@ a:hover {
 }
 li a {
 	display: block;
-	color: #7CC6FE;
+	color: black;
 	
 	text-align: center;
 	padding: 14px 24px; 
@@ -40,11 +40,11 @@ li a:hover {
 }
 
 
-section { height: 100vh; }
+
 
 #welcome-section
 {
-
+	height: 100vh;
       background: url(http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg) ;
       background-attachment: fixed;
       background-size:100% auto;
@@ -64,9 +64,13 @@ section { height: 100vh; }
 }
 #project-box
 {
-	width: 1200;
-	height: auto;
-	margin:0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding-bottom: 80px;
+
+
+
 
 }
 .project-text
@@ -86,15 +90,19 @@ section { height: 100vh; }
 .project-tile
 {
 	margin-top: 100px;
-	margin-left: 275px;
+	margin-left: 200[x];
 	
 	height: 300;
 
-	float: left;
+	
 	border: 4px;
 	border-color:#23C9FF;
 	border-style:solid;
+	
 
+}
+.sample-img {
+	min-width: 0;
 }
 
 
@@ -114,6 +122,7 @@ font-size: 20pt;
  }
 #profile{
 	padding-top: 40px;
+
 }
 
 #web-dev
@@ -126,6 +135,7 @@ font-size: 20pt;
 }
 #container{
 	margin-top: 40px;
+	display: flex;
 	width: 2000px;
 	
 	overflow: auto;
@@ -136,7 +146,7 @@ font-size: 20pt;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin-left: 375px;
+	margin-left: 200px;
 	text-decoration: none;
 
 
